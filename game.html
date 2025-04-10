@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joke Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #joke {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button for a Joke 😄</h1>
+  <button onclick="generateJoke()">Tell Me a Joke</button>
+  <div id="joke"></div>
+
+  <script>
+    const jokes = [
+      "Why don't scientists trust atoms? Because they make up everything!",
+      "I told my computer I needed a break, and it said 'No problem — I'll go to sleep.'",
+      "Why did the scarecrow win an award? Because he was outstanding in his field!",
+      "I asked the dog, 'What's two minus two?' He said nothing.",
+      "Parallel lines have so much in common. It’s a shame they’ll never meet."
+    ];
+
+    function generateJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      document.getElementById("joke").innerText = jokes[randomIndex];
+    }
+  </script>
+<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="plants.html">Plants</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="tableau.html">Soil Facts</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="game.html">Joke</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="scratchpage.html">Plants 2</a></li>
+</body>
+</html>
